@@ -5,7 +5,7 @@
     end
 
     def profession
-      print 'Введите ваше имя:'
+      print 'Введите вашу профессию:'
       profession = gets.chomp
     end
   end
