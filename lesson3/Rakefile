@@ -1,0 +1,8 @@
+desc 'Задача по умолчанию'
+task default: :curent_tod
+
+desc 'Вывод текущей даты и времени'
+task :curent_tod do
+  today = Time.new
+  puts 'Текущее время:' + today.strftime("%d-%B-%Y %H:%M:%S") #today.inspect
+end
