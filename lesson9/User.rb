@@ -1,4 +1,6 @@
-require_relative 'lib/User'
+  # frozen_string_literal: true
+
+  require_relative 'lib/User'
 
   arr = []
   print 'Введите количество пользователей: '
@@ -6,7 +8,7 @@ require_relative 'lib/User'
   i = 0
   user = User.new
   while i < pol
-  arr << user.fio('fio')
-  i += 1
+    arr << user.fio('fio')
+    i += 1
   end
-  puts "#{arr}"
+  puts arr.to_s

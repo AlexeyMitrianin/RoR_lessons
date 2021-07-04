@@ -1,8 +1,10 @@
-require_relative 'lib/god'
-require_relative 'lib/god_new'
+# frozen_string_literal: true
 
-g = Visocosnost.new
-g.god('god')
+  require_relative 'lib/god'
+  require_relative 'lib/god_new'
 
-v = Vis.new
-v.god('gods')
+  g = Visocosnost.new
+  g.god('god')
+
+  v = Vis.new
+  v.god('gods')

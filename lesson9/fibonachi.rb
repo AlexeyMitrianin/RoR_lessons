@@ -1,9 +1,11 @@
-def fibonachi(n)
-  return 0 if (1 == n)
-  return 1 if (1 < n) && (n <= 3)
-  fibonachi(n - 1) + fibonachi(n - 2)
-end
+# frozen_string_literal: true
 
-print('Введите номер элемента gоследовательности Фибоначи: ')
-n = gets.to_i
-puts "#{n} элемент gоследовательности Фибоначи: #{fibonachi(n)} "
+  def fibonachi(n)
+    return 0 if n == 1
+    return 1 if (n > 1) && (n <= 3)
+    fibonachi(n - 1) + fibonachi(n - 2)
+  end
+
+  print('Введите номер элемента gоследовательности Фибоначи: ')
+  n = gets.to_i
+  puts "#{n} элемент gоследовательности Фибоначи: #{fibonachi(n)} "
