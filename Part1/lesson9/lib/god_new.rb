@@ -3,7 +3,7 @@
 require 'date'
 
 class Vis
-  def god(gods)
+  def god
     print 'Введите год для проверки на високосность: '
     years = gets.chomp
     while years.empty?
@@ -13,7 +13,7 @@ class Vis
     end
     today = Date.strptime("{ #{years} }", '{ %Y }').to_s
     today = today.to_i
-    gods = if ((today % 4).zero?) & ((today % 100).zero?) & ((today % 400).zero?)
+    gods = if (today % 4).zero? && (today % 100).nonzero? || (today % 400).zero?
              true
            else
              false
